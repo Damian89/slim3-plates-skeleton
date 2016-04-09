@@ -1,0 +1,23 @@
+{
+    "name": "vendor/slim3-plates",
+    "description": "Skeleton based on slim 3.2 and plates php",
+    "authors": [
+        {
+            "name": "Damian Schwyrz",
+            "email": "mail@damianschwyrz.de"
+        }
+    ],
+    "autoload": {
+        "psr-4": {
+            "App\\Model\\": "app/model",
+            "App\\Action\\": "app/action",
+            "App\\Middleware\\": "app/middleware",
+            "App\\": "app/src"
+        }
+    },
+    "require": {
+        "slim/slim": "3.2.2",
+        "league/plates": "3.1.1",
+        "joshcam/mysqli-database-class": "v2.5"
+    }
+}
