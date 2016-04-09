@@ -1,6 +1,6 @@
 {
     "name": "vendor/slim3-plates",
-    "description": "Skeleton based on slim 3.2 and plates php",
+    "description": "Skeleton based on slim 3.3 and plates php",
     "authors": [
         {
             "name": "Damian Schwyrz",
