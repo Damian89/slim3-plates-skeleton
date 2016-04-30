@@ -21,7 +21,6 @@ abstract class abstractModel
         {
             return $this->data;
         }
-
         if ($key != '' && isset($this->data[$key]))
         {
             return $this->data[$key];
@@ -30,6 +29,11 @@ abstract class abstractModel
         {
             return '';
         }
+    }
+
+    public function set($key, $value)
+    {
+        $this->data[$key] = $value;
     }
 
 }

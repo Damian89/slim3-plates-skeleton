@@ -10,7 +10,7 @@
     "autoload": {
         "psr-4": {
             "App\\Model\\": "app/model",
-            "App\\Action\\": "app/action",
+            "App\\Controller\\": "app/controller",
             "App\\Middleware\\": "app/middleware",
             "App\\": "app/src"
         }

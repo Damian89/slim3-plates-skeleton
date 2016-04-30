@@ -15,3 +15,5 @@ $container['db'] = function ($container)
     $settings = $container->get('settings');
     return new \MysqliDb($settings['database']);
 };
+
+require __DIR__ . '/dependencies/controller.php';
