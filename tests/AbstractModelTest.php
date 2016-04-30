@@ -9,7 +9,7 @@ class AbstractModelTest extends PHPUnit_Framework_TestCase
     public function __construct()
     {
         $this->db    = $this->getMock('\MysqliDb');
-        $this->model = new \App\Model\homeModel($this->db);
+        $this->model = $this->getMockForAbstractClass("\App\Model\abstractModel", [$this->db], '', true);
     }
 
     public function test_setter()
