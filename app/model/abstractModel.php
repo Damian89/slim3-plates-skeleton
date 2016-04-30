@@ -27,13 +27,20 @@ abstract class abstractModel
         }
         else
         {
-            return '';
+            throw new \Exception('No value for key');
         }
     }
 
     public function set($key, $value)
     {
-        $this->data[$key] = $value;
+        if ($key != '')
+        {
+            $this->data[$key] = $value;
+        }
+        else
+        {
+            throw new \Exception('Key invalid');
+        }
     }
 
 }
